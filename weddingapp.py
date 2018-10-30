@@ -1,7 +1,14 @@
 import os
 from flask import Flask, render_template, request, redirect
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
+
+app.config["MONGO_DBNAME"] = os.environ.get("DB_NAME")
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
+
+mongo = PyMongo(app)
+
 
 @app.route('/')
 def welcome_page():
