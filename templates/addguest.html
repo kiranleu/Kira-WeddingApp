@@ -1,0 +1,41 @@
+{% extends "base.html"%} {% block content %}
+
+
+
+<div class="container">
+    <div class="row">
+        <h1>
+                Add A Guest
+            </h1>
+        <form action="/do_add_guest" method="POST" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_Name" name="first_Name" type="text">
+                    <label for="first_Name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" name="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            Please add your guest email:
+            <div class="input-field inline">
+                <input id="email_inline" name="email" type="email" class="validate">
+                <label for="email_inline">Email</label>
+                <span class="helper-text" data-error="wrong" data-success="right">example@example.com</span>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="row">
+            <input class="btn waves-effect waves-light" type="submit" value="Add Guest" />
+        </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

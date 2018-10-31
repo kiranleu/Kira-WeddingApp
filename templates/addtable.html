@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+
+
+    <div class="row">
+        <h1>Add Table</h1>
+        <form action="/do_add_table" method="POST" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="table_Name" name="table_name" type="text">
+                    <label for="table_Name">Table Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <input class="btn waves-effect waves-light" type="submit" value="Add Table" />
+            </div>
+    </div>
+    </form>
+
+    {% endblock %}

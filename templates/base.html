@@ -9,21 +9,27 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="{{url_for('static',filename=" css/style.css ")}}" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static',filename="css/style.css")}}" type="text/css" />
 </head>
 
 
 <body>
+    <!--Border Page-->
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="top"></div>
+        <div id="bottom"></div>
     <header>
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Logo</a>
                
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="venue.html">Venue</a></li>
-                    <li><a href="confirmed.html">RSVP</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="addguest.html">Guest List</a></li>
+                    <li><a href="{{ url_for('venue_page')}}">Venue</a></li>
+                    <li><a href="{{ url_for('howtogetthere_page')}}">How to get there?</a></li>
+                    <li><a href="{{ url_for('rsvp_page')}}">RSVP</a></li>
+                    <li><a href="{{ url_for('contactus_page')}}">Contact Us</a></li>
+                    
                     
                 </ul>
             </div>

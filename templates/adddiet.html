@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+
+    <div class="row">
+        <h1>Add Diet Requirements</h1>
+        <form action="/do_add_diet" method="POST" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="diet_Name" name="diet_name" type="text">
+                    <label for="diet_Name">Diet Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <input class="btn waves-effect waves-light" type="submit" value="Add Diet" />
+            </div>
+
+    </div>
+    </form>
+</div>
+
+{% endblock %}

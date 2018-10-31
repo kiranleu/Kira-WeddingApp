@@ -1,1 +1,1 @@
-web python weddingapp.py
+web: python weddingapp.py
