@@ -3,11 +3,12 @@
 
 
 <div class="container">
+    <form action="/do_add_guest" method="POST" class="col s12">
     <div class="row">
         <h1>
-                Add A Guest
-            </h1>
-        <form action="/do_add_guest" method="POST" class="col s12">
+            Add A Guest
+        </h1>
+        
             <div class="row">
                 <div class="input-field col s6">
                     <input id="first_Name" name="first_Name" type="text">
@@ -31,11 +32,11 @@
     </div>
 
 
-        <div class="row">
-            <input class="btn waves-effect waves-light" type="submit" value="Add Guest" />
-        </div>
-
-        </form>
+    <div class="row">
+        <input class="btn waves-effect waves-light" type="submit" value="Add Guest" />
     </div>
+
+    </form>
 </div>
+
 {% endblock %}

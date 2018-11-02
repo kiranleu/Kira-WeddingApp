@@ -6,43 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wedding App</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|KoHo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="{{url_for('static',filename="css/style.css")}}" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static',filename="css/hover.css")}}" type="text/css" />
 </head>
 
 
 <body>
-    <!--Border Page-->
-        <div id="left"></div>
-        <div id="right"></div>
-        <div id="top"></div>
-        <div id="bottom"></div>
+
     <header>
-        <nav>
+        <nav class="N/A transparent">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Logo</a>
                
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="{{ url_for('welcome_page')}}" class="brand-logo">Kira and Bill</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('welcome_page')}}">Home</a></li>
                     <li><a href="{{ url_for('venue_page')}}">Venue</a></li>
                     <li><a href="{{ url_for('howtogetthere_page')}}">How to get there?</a></li>
-                    <li><a href="{{ url_for('rsvp_page')}}">RSVP</a></li>
                     <li><a href="{{ url_for('contactus_page')}}">Contact Us</a></li>
-                    
-                    
+                    <li><a href="{{ url_for('uploadphotos_page')}}">Upload Images</a></li>
+                    <li><a href="{{ url_for('view_photos_uploaded_page')}}" target="_blank">Photos</a></li>
                 </ul>
+                 <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{ url_for('welcome_page')}}">Home</a></li>
+                    <li><a href="{{ url_for('venue_page')}}">Venue</a></li>
+                    <li><a href="{{ url_for('howtogetthere_page')}}">How to get there?</a></li>
+                    <li><a href="{{ url_for('contactus_page')}}">Contact Us</a></li>
+                    <li><a href="{{ url_for('uploadphotos_page')}}">Upload Images</a></li>
+                    <li><a href="{{ url_for('view_photos_uploaded_page')}}" target="_blank">Photos</a></li>
+                </ul>
+
             </div>
         </nav>
+
     </header>
 
 
-   
-    
+
+
+
     {% block content %} {% endblock content %}
+
+    <footer class="page-footer N/A transparent">
+        <div class="container">
+            <div id="icons-footer" class="row">
+                <a href="https://www.facebook.com/events/883571342030724/"target="_blank"><i class="fab fa-facebook-square hvr-float"></i></a>
+                <a href="https://www.instagram.com/wedding.pages/?hl=en"target="_blank"><i class="fab fa-instagram hvr-float"></i></a>
+                <a href="https://twitter.com/weddingmagazine?lang=en"target="_blank"><i class="fab fa-twitter-square hvr-float"></i></a>
+            </div>
+            <div class="row">
+
+                <div class="footer-copyright N/A transparent">
+                    © 2018 Copyright Kira Estrada
+                </div>
+
+            </div>
+    </footer>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $(".button-collapse").sideNav();
+        });
+        
+        
+        
+        
+        $(document).ready(function(){
+        $('.slider').slider();
+        });
+    
+       
+    </script>
+
+
+
 
 </body>
 

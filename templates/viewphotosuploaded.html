@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+ <div class="slider fullscreen">
+    <ul class="slides">
+        {% for i in images%}
+      <li>
+          
+        <img src="{{i.image}}">
+        <div class="caption center-align">
+          <h5 class="light grey-text text-lighten-3">Kira and Bill: 29/09/2019</h5>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+ {% endblock %}

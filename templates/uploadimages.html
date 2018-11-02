@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="grid-example col s12 text-align-center">
+            <span class="flow-text text-align-center"> 
+        
+        <h1>Upload your images here!</h1>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore et, iste temporibus itaque at omnis corrupti distinctio officiis obcaecati
+        minus? Voluptatibus voluptate beatae necessitatibus fugit doloribus maiores velit aliquid, omnis!</p>
+    </span>
+    </div>
+    </div>
+    <div class="row">
+        <form action='/do_upload_photos' method="POST" class="col s12" enctype="multipart/form-data">
+             
+      <div class="file-field input-field">
+            <div class="btn">
+                <span>Image</span>
+                <input type="file" name="image">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+            <div class="row">
+                <input class="btn waves-effect waves-light" type="submit" value="Add Photo" />
+            </div>
+        </div>
+    </div>
+    
+     
+    
+    
+    </form>
+    </div>
+      
+    
+</div>
+
+{% endblock %}
