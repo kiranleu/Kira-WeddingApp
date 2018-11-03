@@ -80,6 +80,7 @@ i{
 }
 
 
-.large material-icons:hover ~ #flyingText {
-  display: block;
+
+#addDietButton{
+    width: 202px;
 }
