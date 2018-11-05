@@ -42,6 +42,8 @@ The structure of the whole Website is:
         
 ##  Features
 
+
+### Existing Features
     In the home page we will find three buttons: Add Guest, Add diet and Add table.
 
     
@@ -74,12 +76,19 @@ The structure of the whole Website is:
 
 * Feature 5
         The button Image in the upload photo section allows the user to choose what file would like to upload to the app.
-        Currently the user only can upload one image at the time. It's is a feature i am workin on at theminute.
+        
 
 * Feature 6
         When the user clisk on the Photos section, All the picures uploaded will be shown in a full size slider feature.
 
+### Feautures to be implemented
+
+* Feature 1
+
+        A feature that will allow the user to upload more than one image at the same time.
         
+        
+
 ## Technologies Used
 
 To construct this app I have used:
@@ -88,14 +97,68 @@ To construct this app I have used:
 * Flask
 * MongoDB
 * Materialize
-* 
+* Google Fonts
+* Flask Mail
+* Hover.css 
+
 
 ## Testing
+
+#### Links
+
+All the links included in the website have been tested and they are all working.
+
+### Effects
+
+Hover effects on icons, links and cards have been tested and they all have a hover effect working as expected. 
+
+* Responsive The website have been tested in different viewports and it is responsve.
+
+### Data Base
+
+Since we are using MongoDB i had tested that the data is been storage in the expected collection
+and this is working.
+
+* Infomation Added by the host: Has been tested and passed.
+* Information added by the guest: Has been tested and is working.
+
+### Testing Email Sending feature
+
+The feature has been tested and it is sending the email correctly with the correct link.
+
+The link the user receives on the email has been tested and is working.
+
+### Testing Images features
+
+I had try to upload and image from a mobile phone and laptop and it had worked successfully.
+
+The Images are being kept in the data base correctly.
+
+The images that have been uploaded on the data base are shown in the Photos section. This has been tested and has passed it successful.
 
 
 ## Deployment
 
-I deployed this app using Heroku.
+I deployed this app using Heroku ang GitHub.
+
+Here is the link to the app:
+
+[https://kira-wedding-app.herokuapp.com/]
+
+## Credits
+
+### Content
+
+All the content from the Website is based on the clients Wedding. Some of the information, 
+has been took from the actual venue website.
+
+I also had used Google maps to embed it on the how to get there section.
+
+Pictures and images used in the Website are been download from different google searches.
+
+
+
+
 
 
         
