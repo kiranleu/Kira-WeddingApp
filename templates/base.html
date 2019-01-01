@@ -16,12 +16,13 @@
 
 
 <body>
+   
 
     <header>
-        <nav class="N/A transparent">
+        <nav >
             <div class="nav-wrapper">
                
-                <a href="{{ url_for('welcome_page')}}" class="brand-logo">Kira and Bill</a>
+                <a href="{{ url_for('welcome_page')}}" ><img class="logo" width="250" src="static/css/images/logo1.png"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                  <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('welcome_page')}}">Home</a></li>
@@ -44,6 +45,8 @@
         </nav>
 
     </header>
+    
+    <main>
 
 
 
@@ -51,7 +54,9 @@
 
     {% block content %} {% endblock content %}
 
-    <footer class="page-footer N/A transparent">
+
+    </main>
+    <footer class="page-footer">
         <div class="container">
             <div id="icons-footer" class="row">
                 <a href="https://www.facebook.com/events/883571342030724/"target="_blank"><i class="fab fa-facebook-square hvr-float"></i></a>
