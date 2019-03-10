@@ -16,7 +16,7 @@ app.config["MONGO_DBNAME"] = os.environ.get("DB_NAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 
-app.config['MAIL_SERVER']='smtp.googlemail.com'
+app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT']=587
 app.config['MAIL_USE_TLS']=True
 app.config['MAIL_USERNAME']=os.environ.get('EMAIL_USER')
@@ -87,7 +87,7 @@ def do_upload_photos():
        
        return redirect('/')
 
-# this route allow the user to vie the uploaded photos   
+# this route allow the user to view the uploaded photos   
 @app.route('/view_photos_uploaded')
 def view_photos_uploaded_page():
     images = mongo.db.images.find()

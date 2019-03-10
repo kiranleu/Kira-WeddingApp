@@ -1,4 +1,58 @@
+/*****************************************************************      MEDIA QUERIES        ****************************************************************************************/
+@media (max-width:720px){
 
+    #addDietButton1{
+        font-size: 9px;
+        padding: 3px;
+        width: auto;
+    }
+     
+    #addDietButton2{
+        font-size: 9px;
+        padding: 3px;
+        width: auto;
+    }
+    
+    #addDietButton3{
+        font-size: 9px;
+         padding: 3px;
+         width: auto;
+    }
+     
+ 
+}
+
+@media (max-width:360px){
+    
+    #addDietButton1{
+        font-size: 9px;
+        padding: 2px;
+        width: auto;
+    }
+     
+    #addDietButton2{
+        font-size: 9px;
+        padding: 2px;
+        width: auto;
+    }
+    
+    #addDietButton3{
+        font-size: 9px;
+         padding: 2px;
+         width: auto;
+    }
+}
+
+
+
+
+
+/*****************************************************************     HTML        *******************************************************************************************/
+
+html{
+    font-weight: unset;
+}
+ 
  body {
     display: flex;
     min-height: 100vh;
@@ -8,15 +62,39 @@
 
   main {
     flex: 1 0 auto;
-       background-color: #f5f5f5;
+    background-color: #f5f5f5;
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
     min-height: 100%;
-    
-    
   }
-      
+ 
+ .container{
+    margin-top: 10px;
+}
+h1, 
+h2{
+   font-family: 'KoHo', sans-serif;
+   font-size: 5rem;
+   font-decoration: bold;
+   
+}
+
+.row .col.s4 {
+    /* width: 33.3333333333%; */
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    margin-right: 105px;
+    /* padding-left: 55px; */
+    padding-bottom: 40px;
+    padding-left: 66px;
+}
+ /*****************************************************************     NAVIGATION BAR       *******************************************************************************************/
+
 nav{
   
   height:250px;
@@ -24,29 +102,31 @@ nav{
    font-size: -1rem;
    font-weight: bolder;
    background-color: #ffffff;
-   
-  
-
-    
 }
 
 nav ul a {
  -webkit-transition: background-color .3s;
  transition: background-color .3s;
  font-size: 1rem;
- color: #fff;
+ color: #2bbbad;
  display: block;
  padding: 78px;
  cursor: pointer;
 }
+
 .logo {
     height: 188px;
     width: 220px;
-    margin-top: 19px;
-    margin-left: 117px;
+ 
 }
-a {
-  color: black;
+
+.material-icons{
+    color:#2bbbad;
+}
+/*****************************************************************     LINKS AND BUTTONS  *******************************************************************************************/
+
+a: {
+  color: blue;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -56,13 +136,8 @@ a:active {
   color: white;
 }
 
-a:visited {
-  color: #80cbc4;
-}
 
-#icons-footer a{
-    color: white;
-}
+
 
 .brand-logo{
    font-family: 'Coming Soon', cursive;
@@ -71,21 +146,7 @@ a:visited {
    transform: rotate(-10deg);
    
 }
-
-.container{
-    margin-top: 10px;
-}
-h1 h2{
-   font-family: 'KoHo', sans-serif;
-   font-size: 5rem;
-   font-decoration: bold;
-}
-
-
-    
-    
-   
-
+/*****************************************************************     VENUE PAGE      *******************************************************************************************/
 #venue_img{
     background-image: url('images/castillotamarit.jpg');
     background-size: cover;
@@ -95,6 +156,20 @@ h1 h2{
 .paragraph_venue{
     color: white;
 }
+
+font-weight-on-paragraph{
+    font-weight: 100;
+}
+
+
+/*****************************************************************     FOOTER      *******************************************************************************************/
+
+
+#icons-footer a{
+    color: white;
+}
+
+
 
 .page-footer {
     padding-top: 20px;
@@ -124,6 +199,3 @@ i{
 
 
 
-#addDietButton{
-    width: 202px;
-}
