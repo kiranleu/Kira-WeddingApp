@@ -7,13 +7,18 @@ This App also keeps records of that organization as all the data introduced in t
 will be stored in MongoDB.
 
 ## UX 
+
+
 ### Who is it for?
 
 The potential user of this application will be people who are planning their wedding.
 
-It is directed to people with basic knowledge on technology as the App is been kept simple and as clear as possible.
+This project is directed to people with basic knowledge on technology as the App is been kept simple and as clear as possible.
+
 The customer is looking for using this app mostly on their desktop but it can easily be used on their mobile device.
+
 The customer, in this case, is looking for organizing their wedding event as well as keep memory from it.
+
 The design is adaptable for any viewport too as you can see on the mockups I have attached in the project.
 
 ### Structure and Design
@@ -85,7 +90,11 @@ The structure of the whole Website is:
 * Feature 1
 
         A feature that will allow the user to upload more than one image at the same time.
+
+* Feature 2
         
+        Security IMAP so we can make sure that all the  RSVP emails are in the Inbox not in Spam  as it is ocurring with some 
+        of the email providers as Outlook.
         
 
 ## Technologies Used

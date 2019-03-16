@@ -14,8 +14,6 @@ app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = os.environ.get("DB_NAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
-
-
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT']=587
 app.config['MAIL_USE_TLS']=True
