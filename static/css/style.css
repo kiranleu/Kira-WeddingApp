@@ -18,7 +18,10 @@
          padding: 3px;
          width: auto;
     }
-     
+    
+    .materialboxed.initialized{
+        display: none;
+    }
  
 }
 
