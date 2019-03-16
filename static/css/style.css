@@ -79,7 +79,7 @@ h1,
 h2{
    font-family: 'KoHo', sans-serif;
    font-size: 5rem;
-   font-decoration: bold;
+   font-weight: bold;
    
 }
 
@@ -128,7 +128,7 @@ nav ul a {
 }
 /*****************************************************************     LINKS AND BUTTONS  *******************************************************************************************/
 
-a: {
+a {
   color: blue;
   text-decoration: none;
   text-transform: uppercase;
